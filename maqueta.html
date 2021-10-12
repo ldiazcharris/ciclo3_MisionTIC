@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+body {font-family: Arial;}
+
+/* Style the tab */
+    .tab {
+        overflow: hidden;
+        border: 1px solid ##FFB718;
+        background-color: #E2162F;
+	p {color:blue;}
+    }
+
+
+/* Style the buttons inside the tab */
+        .tab button {
+		color: #ffffff;
+            background-color: #E2162F;
+            float: left;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 14px 16px;
+            transition: 0.3s;
+            font-size: 17px;
+        }
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #FFB718;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+	color: #000000;
+  background-color: #FFB718;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  -webkit-animation: fadeEffect 1s;
+  animation: fadeEffect 1s;
+}
+
+/* Fade in tabs */
+@-webkit-keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+</style>
+</head>
+<body>
+
+
+<h1 style="background-color: #E2162F; color: #ffffff;">Maqueta RDSO</h1>
+
+
+<p>
+
+
+
+</p>
+
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'Triage')">Triage/Agenda</button>
+  <button class="tablinks" onclick="openCity(event, 'Pc')">Punto Concentración</button>
+  <button class="tablinks" onclick="openCity(event, 'Ruta')">Ruta Manifestación</button>
+  <button class="tablinks" onclick="openCity(event, 'Pm')">Punto Monitoreo</button>
+  <button class="tablinks" onclick="openCity(event, 'Rc')">Reporte Ciudadano</button>
+  <button class="tablinks" onclick="openCity(event, 'Rs')">Redes Sociales</button>
+  
+</div>
+
+<div id="Triage" class="tabcontent">
+  <h3>Triage / Agenda </h3>
+
+  <p> Descripción
+
+ </p>
+
+<br/>
+<center>
+<img src="https://i.ibb.co/3SZyyP6/Triage-Form.jpg" width="200" height="350"/>      <img src="https://i.ibb.co/LJWhmHn/Triage-Form-2.jpg" width="200" height="350"/>
+</center>
+<br/>
+
+<Center>
+<iframe src="https://editor.giscloud.com/rest/1/maps/1542220/render.iframe?bound=-8270048.087126756,512254.3567987047,-8221128.389024243,529299.8141062967&toolbar=true&popups=true&layerlist=true" width="570" height="370" frameborder="0"></iframe>
+</center>
+
+</div>
+
+<div id="Pc" class="tabcontent">
+  <h3>Georreferenciación-Punto Concentración</h3>
+  <p>Dentro de la categoría Georreferenciación, la cual permite realizar un análisis y seguimiento espacial de la manifestación social que se vaya a realizar, se derivó la extensión “Puntos de Concentración”, cuyo objetivo es permitir al usuario (Manifestante, Organizador de la manifestación) seleccionar el sitio o los sitios de concentración que se tienen previstos para el día de la manifestación.</p> 
+<br/>
+<center>
+<img src="https://i.ibb.co/zNt6R6n/Pto-Concentr.jpg"  width="200" height="350"/>
+</center>
+<br/>
+
+<Center>
+<iframe src="https://editor.giscloud.com/rest/1/maps/1541060/render.iframe?bound=-8252648.281266812,512166.7232950479,-8240418.356741184,516428.0876219496&toolbar=true&popups=true&layerlist=true" width="550" height="350" frameborder="0"></iframe>
+</center>
+
+</div>
+
+<div id="Ruta" class="tabcontent">
+
+  <h3>Georreferenciación-Ruta de Manifestación con zona de influencia</h3>
+
+<p>Dentro de la categoría Georreferenciación, la cual permite realizar un análisis y seguimiento espacial de la manifestación social que se vaya a realizar, se derivó la extensión “Ruta de manifestación”, la que permite al usuario seleccionar las rutas que se llevarán a cabo para conectar los sitios de concentración iniciales con el sitio de concentración final. Si la manifestación que se llevará a cabo no tiene contemplado realizar movilizaciones no se diligenciara la extensión “Ruta de manifestación”.
+De acuerdo con el tipo de vía (Autopistas, Carreteras principales, Carreteras secundarias, Carreteables, Peatonales) que se va a utilizar, se generará una zona de influencia, realizando un Buffer a la ruta de manifestación seleccionada. 
+</p> 
+<br/>
+<center>
+<img src="https://i.ibb.co/pZ05fD0/Ruta-M.jpg" width="200" height="350"/>
+</center>
+<br/>
+
+<Center>
+<iframe src="https://editor.giscloud.com/rest/1/maps/1531910/render.iframe?bound=-8252347.950436313,512175.3415427804,-8240118.025910685,516436.7058696784&toolbar=true&popups=true" width="550" height="350" frameborder="0"></iframe></center>
+</div>
+
+
+
+<div id="Pm" class="tabcontent">
+  <h3>Georreferenciación-Punto de monitoreo</h3>
+<p>Dentro de la categoría Georreferenciación, la cual permite realizar un análisis y seguimiento espacial de la manifestación social que se vaya a realizar, se derivó la extensión “Puntos de Monitoreo”, cuyo objetivo es que el usuario (Gestor Social) realice un seguimiento en tiempo real sobre los hechos más relevantes que están sucediendo en la manifestación, este seguimiento será realizado mediante un formulario que deberá ser debidamente diligenciado.</p> 
+<br/>
+<center>
+<img src="https://i.ibb.co/6Pyh4kx/GS.jpg" width="200" height="350"/>         <img src="https://i.ibb.co/pzMW9fy/GS-2.jpg"width="200" height="350"/>
+</center>
+<br/>
+
+<Center>
+<iframe src="https://editor.giscloud.com/rest/1/maps/1542219/render.iframe?bound=-8259498.637640059,510561.1304308325,-8235038.788588801,519083.85908463225&toolbar=true&popups=true" width="550" height="350" frameborder="0"></iframe>
+
+<iframe width="600" height="373.5" src="https://app.powerbi.com/view?r=eyJrIjoiNmIxYzljMWMtNzg4Zi00MzBiLTk3MjItOTczYzkyN2Y1NzMyIiwidCI6ImQ2NDZkM2E4LTdiMTUtNGI1My05ZDkyLTk4MTVmZDYyNzAyYyIsImMiOjR9" frameborder="0" allowFullScreen="true"></iframe>
+</center> 
+
+</div>
+
+
+<div id="Rc" class="tabcontent">
+  <h3>Georreferenciación-Reporte Ciudadano</h3>
+ <p>Dentro de la categoría Georreferenciación, la cual permite realizar un análisis y seguimiento espacial de la manifestación social que se vaya a realizar, se derivó la extensión “Reporte Ciudadano”, cuyo objetivo es que el usuario (Manifestante) realice un seguimiento en tiempo real sobre los hechos más relevantes que están sucediendo en la manifestación, este seguimiento será realizado mediante un formulario que deberá ser debidamente diligenciado.
+</p> 
+<br/>
+<center>
+<img src="https://i.ibb.co/9YjMB4B/RC-1.jpg" width="200" height="350"/>         <img src="https://i.ibb.co/D4csTCb/RC-2.jpg" width="200" height="350"/>
+</center>
+<br/>
+
+<Center>
+<iframe src="https://editor.giscloud.com/rest/1/maps/1540192/render.iframe?bound=-8270423.346611256,511479.62275920436,-8221503.648508744,528525.0800668001&toolbar=true&popups=true" width="550" height="350" frameborder="0"></iframe>
+
+<iframe width="600" height="373.5" src="https://app.powerbi.com/view?r=eyJrIjoiNjRhYWE3NDgtYjBjOC00Zjg3LThiOTAtZWNhMzg0N2E0OTQ2IiwidCI6ImQ2NDZkM2E4LTdiMTUtNGI1My05ZDkyLTk4MTVmZDYyNzAyYyIsImMiOjR9" frameborder="0" allowFullScreen="true"></iframe>
+</center>
+
+
+</div>
+
+
+<div id="Rs" class="tabcontent">
+  <h3>Georreferenciación-Redes Sociales</h3>
+ <p>Descripción
+</p> 
+<br/>
+<center>
+
+<iframe src="https://editor.giscloud.com/rest/1/maps/1543663/render.iframe?bound=-8456687.06135874,410619.715947967,-8065329.4765386395,546983.3744087182&toolbar=true&popups=true" width="550" height="350" frameborder="0"></iframe>
+
+
+<iframe width="600" height="373.5" src="https://app.powerbi.com/view?r=eyJrIjoiYzg2ZDc3MjAtNGIwOC00NDZjLTgzYzMtOTVkNTYxZmM4OTlkIiwidCI6ImQ2NDZkM2E4LTdiMTUtNGI1My05ZDkyLTk4MTVmZDYyNzAyYyIsImMiOjR9" frameborder="0" allowFullScreen="true"></iframe>
+
+</center>
+
+
+
+
+</div>
+
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
+   
+</body>
+</html> 
+
+
+
+
+
